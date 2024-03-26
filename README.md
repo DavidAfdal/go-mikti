@@ -42,7 +42,7 @@ Data Bonus 2: Lumba-lumba mendapat skor 97, 112 dan 101. Koala mendapat skor 109
 - Bonus 1: Sertakan persyaratan untuk skor minimum 100. Dengan aturan ini, sebuah tim hanya menang jika memiliki skor lebih tinggi dari tim lain, dan pada saat yang sama skor minimal 100 poin. Petunjuk: Gunakan operator logika untuk menguji skor minimum, serta beberapa blok else-if.
 - Bonus 2: Skor minimum juga berlaku untuk seri! Jadi seri hanya terjadi ketika kedua tim memiliki skor yang sama dan keduanya memiliki skor lebih besar atau sama dengan 100 poin. Jika tidak, tidak ada tim yang memenangkan trofi.
 
-
+Code : 
 ```go
 package soal
 
@@ -139,4 +139,28 @@ func hitungRataRata(data []int) int {
 	return rataRata
 }
 ```
+
+Output :
+```bash
+
+=========== SOAL 1 ===========
+Rata - rata skor lumba - lumba :  97
+Rata - rata skor koala :  96
+Tim lumba-lumba menang
+=========== Bonus 1 ===========
+Rata - rata skor lumba - lumba :  103
+Rata - rata skor koala :  109
+Tim Kaoala menang
+=========== Bonus 2 ===========
+Rata - rata skor lumba - lumba :  103
+Rata - rata skor koala :  103
+Kedua Tim Seri
+
+```
+
+## Soal 2
+
+
+
+
 
