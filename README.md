@@ -1,5 +1,28 @@
 # Mikti Challenge 2
 
+## Main.go
+
+Running :
+
+```bash
+go run main.go
+
+```
+
+```go
+package main
+
+import "github.com/davidafdal/go-mikti/soal"
+
+func main() {
+	soal.Soal1()
+	soal.Soal1Bonus1()
+	soal.Soal1Bonus2()
+	soal.Soal2()
+}
+```
+
+
 
 Soal 1
 
