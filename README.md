@@ -32,6 +32,7 @@ go run main.go
 
 
 Ada dua tim senam, Tim Lumba-lumba dan Tim Koala. Mereka bertanding satu sama lain sebanyak 3 kali. Pemenang dengan skor rata-rata tertinggi memenangkan trofi!
+
 Tugas :
 - Hitung skor rata-rata untuk setiap tim, menggunakan data uji di bawah ini.
 ```bash
