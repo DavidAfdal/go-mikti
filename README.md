@@ -15,7 +15,8 @@ func main() {
 	soal.Soal1()
 	soal.Soal1Bonus1()
 	soal.Soal1Bonus2()
-	soal.Soal2()
+	soal.Soal2Data1()
+	soal.Soal2Data2()
 }
 ```
 
@@ -31,7 +32,7 @@ go run main.go
 
 
 Ada dua tim senam, Tim Lumba-lumba dan Tim Koala. Mereka bertanding satu sama lain sebanyak 3 kali. Pemenang dengan skor rata-rata tertinggi memenangkan trofi!
-Tugas kamu:
+Tugas :
 - Hitung skor rata-rata untuk setiap tim, menggunakan data uji di bawah ini.
 ```bash
 Data Uji:
@@ -160,6 +161,107 @@ Kedua Tim Seri
 ```
 
 ## Soal 2
+
+Mark dan John sedang mencoba membandingkan BMI (Body Mass Index) mereka, yang dihitung menggunakan rumus: BMI = massa / tinggi ** 2 = massa / (tinggi * tinggi) (massa dalam kg dan tinggi dalam meter).
+
+Tugas :
+- Simpan massa dan tinggi badan Mark dan John dalam variabel.
+- Hitung kedua BMI mereka menggunakan rumus (kamu bahkan dapat menerapkan kedua versi)
+- Buat variabel Boolean 'markHigherBMI' yang berisi informasi tentang apakah Mark memiliki BMI lebih tinggi dari John.
+
+Data Uji:
+```bash
+Data 1: Berat Mark 78 kg dan tinggi 1.69 m. Berat John 92 kg dan tinggi 1.95 m.
+Data 2: Berat Mark 95 kg dan tinggi 1.88 m. Berat John 85 kg dan tinggi 1.76 m.
+```
+
+Code :
+
+```go
+package soal
+
+import "fmt"
+
+func Soal2Data1() {
+	fmt.Println("=========== SOAL 2 Data 1===========")
+
+	var markHigherBMI bool
+
+	beratMark := 78
+	tinggiMark := 1.69
+
+
+	beratJohn := 92
+	tinggiJohn := 1.95
+
+	bmiMark := hitungBMI(beratMark, tinggiMark)
+	bmiJohn := hitungBMI(beratJohn, tinggiJohn)
+
+	fmt.Printf("BMI Mark : %.2f \n",  bmiMark)
+	fmt.Printf("BMI John : %.2f \n",  bmiJohn)
+
+
+	if bmiMark > bmiJohn {
+		markHigherBMI = true
+	} else {
+		markHigherBMI = false
+	}
+	
+   fmt.Println("Apakah BMI mark lebih tinggi dari john ? ", markHigherBMI)
+
+}
+func Soal2Data2() {
+	fmt.Println("=========== SOAL 2 Data 2 ===========")
+
+	var markHigherBMI bool
+
+	beratMark := 95
+	tinggiMark := 1.88
+
+
+	beratJohn := 85
+	tinggiJohn := 1.76
+
+	bmiMark := hitungBMI(beratMark, tinggiMark)
+	bmiJohn := hitungBMI(beratJohn, tinggiJohn)
+
+	fmt.Printf("BMI Mark : %.2f \n",  bmiMark)
+	fmt.Printf("BMI John : %.2f \n",  bmiJohn)
+
+
+	if bmiMark > bmiJohn {
+		markHigherBMI = true
+	} else {
+		markHigherBMI = false
+	}
+	
+   fmt.Println("Apakah BMI mark lebih tinggi dari john ? ", markHigherBMI)
+
+}
+
+func hitungBMI(massa int, tinggi float64) float64 {
+	bmi := float64(massa) / (tinggi * tinggi)
+
+	return bmi
+}
+```
+
+Output :
+
+```bash 
+=========== SOAL 2 Data 1===========
+BMI Mark : 27.31
+BMI John : 24.19
+Apakah BMI mark lebih tinggi dari john ?  true
+=========== SOAL 2 Data 2 ===========
+BMI Mark : 26.88
+BMI John : 27.44
+Apakah BMI mark lebih tinggi dari john ?  false
+```
+
+
+
+
 
 
 
