@@ -1,4 +1,6 @@
 # Mikti Challenge 2
+Study case menggunakan bahasa pemrograman Golang
+
 
 ## Main.go
 
@@ -24,7 +26,22 @@ func main() {
 
 
 
-Soal 1
+## Soal 1
+
+
+Ada dua tim senam, Tim Lumba-lumba dan Tim Koala. Mereka bertanding satu sama lain sebanyak 3 kali. Pemenang dengan skor rata-rata tertinggi memenangkan trofi!
+Tugas kamu:
+- Hitung skor rata-rata untuk setiap tim, menggunakan data uji di bawah ini.
+```bash
+Data Uji:
+Data 1: Lumba-lumba mendapat skor 96, 108 dan 89. Koala mendapat skor 88, 91 dan 110.
+Data Bonus 1: Lumba-lumba mendapat skor 97, 112 dan 101. Koala mendapat skor 109, 95 dan 123.
+Data Bonus 2: Lumba-lumba mendapat skor 97, 112 dan 101. Koala mendapat skor 109, 95 dan 106
+```
+- Bandingkan skor rata-rata tim untuk menentukan pemenang kompetisi, dan cetak ke konsol. Jangan lupa bahwa bisa ada hasil seri, jadi uji juga untuk itu (seri berarti mereka memiliki skor rata-rata yang sama).
+- Bonus 1: Sertakan persyaratan untuk skor minimum 100. Dengan aturan ini, sebuah tim hanya menang jika memiliki skor lebih tinggi dari tim lain, dan pada saat yang sama skor minimal 100 poin. Petunjuk: Gunakan operator logika untuk menguji skor minimum, serta beberapa blok else-if.
+- Bonus 2: Skor minimum juga berlaku untuk seri! Jadi seri hanya terjadi ketika kedua tim memiliki skor yang sama dan keduanya memiliki skor lebih besar atau sama dengan 100 poin. Jika tidak, tidak ada tim yang memenangkan trofi.
+
 
 ```go
 package soal
