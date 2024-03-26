@@ -4,12 +4,7 @@ Study case menggunakan bahasa pemrograman Golang
 
 ## Main.go
 
-Running :
-
-```bash
-go run main.go
-
-```
+Code :
 
 ```go
 package main
@@ -24,6 +19,12 @@ func main() {
 }
 ```
 
+Running :
+
+```bash
+go run main.go
+
+```
 
 
 ## Soal 1
